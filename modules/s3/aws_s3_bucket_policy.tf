@@ -13,6 +13,7 @@ resource "aws_s3_bucket_policy" "this" {
           "${aws_s3_bucket.this.arn}/*"
         ]
       }
-    ]
+    ],
+    Version = "2012-10-17"
   })
 }
